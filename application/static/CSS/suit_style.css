@@ -1,0 +1,151 @@
+:root {
+	--main-text-color: hsla(20,100%,99%,1)
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	vertical-align: baseline;
+
+} 
+
+body {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	border: 0;
+	text-align: center;
+	height: 100%;
+	vertical-align: baseline;
+	
+}
+
+.line {
+    width: 100%;
+    height: .2rem;
+    background-color: black;
+}
+
+.main-container {
+	width: 100%;
+}
+
+.fabric-background {
+	height: 50rem;
+	width: 100%;
+	top: 0px;
+}
+
+.headline {
+	font-size: 5rem; 
+	color: var(--main-text-color); 
+	background-color: hsla(0,0%,50%,.5);
+	margin: 0rem 15%;
+	position: relative;
+	top: 10rem;
+}
+
+.scroll-link {
+	color: var(--main-text-color);
+	background-color: hsla(0,0%,50%,.5);
+	position: relative;
+	top: 12rem;
+	font-size: 3rem;
+	font-weight: 900;
+	margin: 1rem 40%;
+	padding: .75rem;
+	/* vertically center child <a>*/
+	display: grid;
+}
+
+.scroll-link a {
+	width: 100%;
+	text-decoration: none;
+	color: var(--main-text-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.scroll-link a:hover {
+	text-decoration: underline;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: hsla(0,0%,50%,.5);
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 6rem;
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+}
+.topnav .title {
+	text-align: center;
+	font-size: 3rem;
+	width: auto;
+	justify-self: center;
+	align-self: end;
+	display: inline-block;
+	padding: 0px 0px;
+	overflow: hidden;
+	margin: 0px;
+	position: relative;
+	text-decoration: none;
+	color: var(--main-text-color);
+}
+.topnav .navlinks {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+.topnav .navlinks a {
+	align-self: end;
+	color: var(--main-text-color);
+	text-decoration: none;
+	padding: 10px;
+}
+.topnav .navlinks a:hover {
+	text-decoration: underline;
+}
+
+
+.content div {
+	height: 50rem;
+}
+.content .about-us {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content .about-us .backdrop {
+	font-size: 5rem; 
+	color: var(--main-text-color); 
+	background-color: hsla(0,50%,50%,.9);
+	border: .2rem black solid;
+	height: 75.5%;
+	width: 100%;
+}
+/*
+.topnav .navlink {
+	text-align: center;
+	font-size: 1%;
+	width: 100px;
+	justify-self: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-self: center;
+	background-color: #f44336;
+	text-decoration: none;
+	color: white;
+	padding: 10px 40px;
+	overflow: hidden;
+	margin: 10px;
+
+}
