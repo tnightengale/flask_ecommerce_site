@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+
+}
+.navbar {
+	height: 4rem;
+	background-color: purple;
+}
+
+div {
+	background-color: green;
+}

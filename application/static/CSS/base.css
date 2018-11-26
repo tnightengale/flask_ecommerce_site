@@ -1,0 +1,15 @@
+body, html {
+	margin: 0;
+}
+
+.navbar {
+	background-color: blue;
+	height: 5rem;
+}
+
+.content {
+	background-color: grey;
+	overflow: hidden;
+	height: 100vh;
+}
+

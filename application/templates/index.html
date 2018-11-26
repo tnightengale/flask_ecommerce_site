@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>Dutch Suits</title>
-			<!--<meta http-equiv="refresh" content="10">-->
-			<link rel="stylesheet" type='text/css' href="../static/CSS/suit_style.css">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="description" content="Custom suits for young professionals.">
-			<meta name="keywords" content="Suits, 'custom suits'">
-		</head>
-		<body>
-			<div class='main-container'>
-				<div class='fabric-background' style="background-image: url('../static/images/navy_suit_folds.jpg');">
-					<div class='headline'>We craft beautiful suits.</div>
-					<div class='scroll-link'><a href="#about">Learn how.</a></div>
-				</div>
-				<div class="topnav">
-					<a class = "title" href="#">Dutch.</a>
-					<div class='navlinks'>
-						<a href="#">About</a>
-						<a href="#"><span style="white-space: nowrap;">Pre-Order</span></a>
-					</div>
-				</div>
-				<div class="line"></div>
-				<div class="content">
-					<div class="about-us" id='about' style="background-image: url('../static/images/wood_background.jpg');">
-						<div class="backdrop">THings</div>
-					</div>
-				</div>
-			</div>
-		</body>
-	</html>
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Hi, {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+{% endblock %}
